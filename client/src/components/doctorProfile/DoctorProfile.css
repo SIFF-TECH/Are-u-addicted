@@ -1,0 +1,390 @@
+.InfoP{
+  
+ 
+    width: 100%;
+   border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+     animation: ease-in-out;
+}
+.info-doctor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 100%;
+
+    gap: 20px;
+   
+    padding: 30px;
+}
+.patient{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    
+}
+.TextInfoP{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding-top:15px ;
+    width: 30%;
+    border-radius: 14px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;}
+
+
+.new-patient,.recovered-patient,.healing-patient , .total-patient{
+    background-color: var(--text-color-back);
+  border: none;
+   width: 25%;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.recovered-patient{
+    background-color: rgba(222, 255, 215, 0.505);
+   
+}
+.healing-patient{
+    background-color: rgba(255, 215, 215, 0.558);
+   
+}
+.total-patient{
+    background-color: rgba(235, 199, 255, 0.491);
+    
+}
+.new-patient h3 {
+    color: var(--text-color);
+    margin-top: 0;
+}
+
+.new-patient p {
+    color: var(--text-color);
+    margin-top: -8px;
+    
+}
+.recovered-patient h3{
+    color:rgb(0, 167, 3) ;
+    margin-top: 0;
+}
+.recovered-patient p{
+    color: rgb(0, 167, 3);
+    margin-top: -8px;
+}
+.healing-patient h3{
+    color:rgb(167, 0, 0) ;
+    margin-top: 0;
+}
+
+.healing-patient p{
+    color: rgb(167, 0, 0);
+    margin-top: -8px;
+}
+
+.total-patient h3{
+    color: rgb(176, 30, 255);
+    margin-top: 0;
+}
+.total-patient p{
+    color: rgb(132, 0, 203);
+    margin-top: -8px;
+}
+.statistics{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    
+    gap: 10px;
+    row-gap: 30px;
+ }
+.statistic{
+   width: 49%;
+   padding: 10px;
+  height: max-content;
+  
+}
+.statistic.year{
+    width: 60%;
+    padding: 10px;
+    height: max-content;
+   
+ }
+ .statistic.circl{
+   padding: 20px 0 0;
+    width: 33%;
+    height: max-content;
+    background-color: var(--backgrouncolor2);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   contain: paint;
+    background-size: cover;
+ }
+ .statistic.circl h4{
+   color: var(--backgrouncolor1);
+   margin-top: 10px;
+ }
+
+
+ .doctor-speciality{
+color: var(--backgrouncolor1);
+   margin: -10px 0 30px;
+   opacity: 0.6;
+ }
+ .doctor-more{
+   padding: 20px;
+   border-radius: 14px;
+ }
+
+
+ .doctor-more h4{
+   margin: 10px 0 -10px;
+   font-weight: 500;
+   
+ }
+ .doctor-more p {
+   margin-bottom: -0px;
+ }
+
+ .doctor-more.doctor-payment{
+   background-color: rgba(144, 0, 255, 0.24);
+ }
+ .doctor-more.doctor-payment h4{
+   color: rgb(233, 111, 255);
+ }
+ .doctor-more.doctor-payment p{
+   color: rgb(233, 111, 255);
+   margin-bottom: -0px;
+ }
+
+ .doctor-more.doctor-available{
+   background-color: #fd89042e;
+ }
+ .doctor-more.doctor-available p{
+   color: #fd8904;
+   letter-spacing: 1px;
+ }
+ .doctor-more.doctor-available h4{
+   color: #fd8904;
+ }
+
+
+ .doctor-more.doctor-mail{
+   background-color: #ffdd002e;
+ }
+ .doctor-more.doctor-mail h4,.doctor-more.doctor-mail p{
+   color: #efcf00;
+ }
+ .statistic-title{
+
+width: 100%;
+margin: -20px 0;
+font-size: 1.3em;
+color: rgba(0, 0, 0, 0.362);
+display: flex;
+flex-direction: column;
+align-items: center;
+
+ }
+ .statistic-title h3{
+   
+    padding: 0 10px;
+    width: max-content;
+    opacity: 1;
+   
+    background-color: rgb(255, 255, 255);
+ }
+ .statistic-title hr{
+    width: 100%;
+    background-color: rgba(4, 4, 4, 0.127);
+    z-index: -1;
+ }
+
+ .patient-list{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 350px;
+   
+ }
+ .patient-list::-webkit-scrollbar{
+      
+       background-color:transparent;
+       width: 5px;
+       
+   
+ }
+ .patient-list::-webkit-scrollbar-thumb{
+      border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0.563);
+    width: 5px;
+    
+
+}
+
+.patient-list span{
+    position: relative;
+    opacity: 1;
+    color: var(--backroundcolo2);
+ }
+
+ .patient-list h3{
+    text-align: left;
+    font-weight: 500;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px ;
+    width: max-content;
+    font-size: 1.4em;
+    margin: 5px;
+ }
+
+ .TextInfoP.my-information{
+   
+    width: 49%;
+    
+    transform: rotateX(0deg);
+    transition: 1s;
+    height: 340px;
+    contain: paint;
+ }
+ .TextInfoP.my-information:hover{
+    
+    scale: 1.01;
+    
+    cursor: pointer;
+   
+ }
+
+ 
+ .front-card{
+    background-image: url('/Photo/1.jpeg');
+    background-size: cover;
+    
+     width: 100%;
+     margin-top: -15px;
+     top: 0;
+     height: 340px;
+ }
+ .logo-card{
+
+    position: absolute;
+    width: 35%;
+    
+    
+    padding: 20px ;
+    background-size: cover;
+    
+ }
+ .front-card img{
+    
+    width: fit-content;
+   
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    scale: 0.8;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    
+    left: 0;
+ }
+
+ .doctor-card-information{
+   
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 60%;
+    margin:30px 0 0 auto;
+    
+ }
+
+ .doctor-card-information .info-text {
+    margin:auto;
+    text-align: center;
+ }
+ .doctor-card-information .info-text h3{
+    margin-top: 20px;
+    margin-bottom: -20px;
+    font-size: 1.8em;
+    
+
+ }
+ .doctor-card-information .info-text h3 .doctor-last-name{
+    font-size: 16px;
+    margin-top: -5px;
+    color: var(--backgrouncolor2);
+    font-weight: 100;
+    letter-spacing: 0.5px;
+ }
+ .doctor-card-information .info-text p{
+    color: var(--text-color);
+    
+    
+    
+
+ }
+ .contact-information{
+    
+   
+   margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   margin-top: 20px;
+   margin-left: 10px;
+ }
+ .contact-information .contact{
+    display: flex;
+    align-items: center;
+   gap: 8px;
+   width: 70%;
+   
+   text-align: left;
+   margin-bottom: 0px; 
+   font-weight: 400;
+   letter-spacing: 1px;
+   
+ }
+ .contact-information .contact.whatsApp{
+    padding-left: 90px;
+ }
+ .contact-information .contact.mail{
+    padding-left: 50px;
+ }
+ .contact-information .contact.location{
+    padding-left: 130px;
+ }
+
+ .back-card{
+    display: none;
+    background-image: url('/Photo/0.jpeg');
+    background-size: cover;
+    transform: rotateX(180deg);
+    height: 340px;
+    
+ }
+ .back-card img{
+    width: 60%;
+    margin-top: -20px;
+ }
+ .back-card p{
+    opacity: 0.4;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 120px;
+ }
+ 

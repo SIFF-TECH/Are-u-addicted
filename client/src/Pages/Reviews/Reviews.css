@@ -1,0 +1,420 @@
+:root{
+    --backgrouncolor1:#fdfcfc;
+    --backgrouncolor2:#252A34;
+    --text-color: rgb(46, 98, 255);
+    --border-colors:rgba(46, 98, 255, 0.486) ;
+    --white: #fff;
+  --black: #000;
+  --black40: rgba(0, 0, 0, 0.4);
+  --gray: #c8c8c8;
+  --yellow: rgb(46, 98, 255);
+  --sh01: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+    0px 21px 46px 0px rgba(0, 0, 0, 0.1), 0px 83px 83px 0px rgba(0, 0, 0, 0.09),
+    0px 187px 112px 0px rgba(0, 0, 0, 0.05),
+    0px 333px 133px 0px rgba(0, 0, 0, 0.01),
+    0px 520px 146px 0px rgba(0, 0, 0, 0);
+}
+
+.Reviews{
+    border-radius: 0px;
+}
+.IntroToReviews{
+    
+    background-color: var(--backgrouncolor2);
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.IntroToReviews div{ 
+    
+    display: flex;
+    flex-direction: column;
+    place-items: center; 
+    width: 50%;
+
+}
+.IntroToReviews div img {
+ width: 90%;
+}
+
+.IntroToReviews div h1 {
+    font-size: 2.8em;
+    color: var(--backgrouncolor1);
+}
+.IntroToReviews div p {
+    opacity: 1;
+    color: var(--backgrouncolor1);
+    font-size: 1.5em;
+}
+.IntroToReviews div a{
+    border:1px solid;
+    margin-top: 40px;
+    border-color: var(--text-color);
+    padding: 10px 40px;
+    font-size: 1.5em;
+    color: var(--backgrouncolor1);
+    border-radius:14px ;
+    transition: 300ms;
+}
+.IntroToReviews a:hover{
+background-color: var(--text-color);
+}
+.SolRev {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 30px 50px 60px;
+    transition: 200ms;
+    
+}
+.SolRev p  {
+    z-index: 9999;
+}
+.SolRev .Background {
+    width: 40%;
+    mix-blend-mode: multiply;
+    position: absolute;
+    opacity: 0.4;
+    margin: 10% 0px 0px 60% ;
+    
+    
+
+}
+.QuizRev{
+    display: flex;
+    border: solid;
+    justify-content: space-evenly;
+    place-items: center;
+background-color: var(--backgrouncolor2);
+padding-bottom: 50px;
+}
+
+.QuizRev .QuiZRevBody{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+    
+}
+.QuiZRevBody div{
+    width: 100%;
+    display: grid; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: auto auto auto; 
+    grid-template-rows: auto auto auto auto; 
+    gap: 27px 26px; 
+
+    
+}
+.QuiZRevBody h2{
+    color: var(--backgrouncolor1);
+    font-size: 2.4em;
+    text-align: center;
+    
+
+}
+.QuiZRevBody p{
+    color: var(--backgrouncolor1);
+    text-align: center;
+    font-size: 1.6em;
+    margin-top: -20px;
+    
+}
+.QuiZRevBody h1{
+    color: var(--backgrouncolor1);
+    font-size: 3em;
+    text-align: center;
+    margin-left: 25%;
+   
+    width: 50%;
+    z-index: 9999;
+    padding-bottom: 20px;
+    border-bottom:4px Solid ;
+    border-color: var(--text-color);
+    
+}
+
+
+.QuizRev .Background{
+    width: 35%;
+    
+    
+   
+    
+}
+.SolRev .Background img ,.QuizRev .Background img {
+    width: 100%;
+    
+}
+.SolRev h2 {
+font-size: 2.4em;
+z-index: 9999;
+}
+.SolRev h1{
+    font-size: 3em;
+    color: var(--backgrouncolor2);
+    z-index: 9999;
+    padding-bottom: 20px;
+    border-bottom:4px Solid ;
+    border-color: var(--text-color);
+}
+.QuiZRevBody .ReviewsImg{
+    width: 100%;
+}
+.ReviewsImg{
+    width: 70%;
+    z-index: 9999;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    
+    gap: 27px 26px; 
+}
+.ReviewsImg div{
+    
+    max-width: 250px;
+    border: solid;
+}
+
+
+.DoctorRev{
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.DoctorRev h2{
+    font-size: 3em;
+    margin-bottom: -10px;
+}
+.DoctorRev h1{
+    font-size: 2.5em;
+    color: var(--backgrouncolor2);
+
+    
+    
+}
+.Title{
+    
+    width: 50%;
+}
+.Title hr{
+    height: 4px;
+    text-align: center;
+    width: 30%;
+    margin:20px 0 20px 205px ;
+    
+    background-color: var(--text-color);
+}
+.DoctorCards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+
+}
+.CardDoc{
+    padding-top:40px ;
+    padding-bottom:40px ;
+    display: flex;
+    
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    width: 30%;
+    flex-direction: column;
+    
+    place-items: center;
+    min-height: 450px;
+    text-align: center;
+    border-radius: 15px;
+}
+.CardDoc p{
+    margin-top: -10px;
+}
+.CardDoc button{
+    margin-top: 20px;
+    font-size: 1.3em;
+    background-color: var(--text-color);
+    color: var(--backgrouncolor1);
+    transition: 200ms;
+}
+.CardDoc button:hover{
+    background-color: var(--backgrouncolor1);
+    color: var(--text-color);
+}
+.DoctorRev img{
+    width: 60%;
+    height: 60%;
+    border: solid;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+    .rating {
+        margin-top: -10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    }
+    .rating > input{
+     display:none;
+    }
+    .rating > label {
+    position: relative;
+    width: 1.1em;
+    font-size: 2em;
+    color: var(--text-color);
+    cursor: pointer;
+    }
+    .rating > label::before{
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+    }
+    .rating > label:hover:before,
+    .rating > label:hover ~ label:before {
+    opacity: 1 !important;
+    }
+    .rating > input:checked ~ label:before{
+    opacity:1;
+    }
+    .rating:hover > input:checked ~ label:before{
+    opacity: 0.4;
+     }
+     .flx {
+        display: flex;
+      }
+      
+      /* align */
+      .col {
+        flex-direction: column;
+      }
+      
+      .colC {
+        align-items: center;
+      }
+      
+      .colM {
+        justify-content: center;
+      }
+      
+      .row {
+        flex-direction: row;
+      }
+      
+      .rowC {
+        justify-content: center;
+      }
+      
+      .rowM {
+        align-items: center;
+      }
+      
+      
+      .g4 {
+        gap: 4px;
+      }
+      
+      .g8 {
+        gap: 8px;
+      }
+      
+      .g16 {
+        gap: 16px;
+      }
+      
+      .gAuto {
+        gap: auto;
+      }
+      
+      
+      .fil {
+        flex: auto;
+      }
+      
+      .w100 {
+        width: 100%;
+      }
+      
+      /* text styles */
+      .h3 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+      
+      .p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000; 
+        
+      }
+      
+      .sub {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        
+      }
+      
+      .gry100 {
+        color: var(--black);
+      }
+      .gry40 {
+        color: var(--black40);
+      }
+      .card:hover {
+        border: 3px solid var(--yellow);
+        scale: 1.05;
+      }
+      .ydkomfih{
+        display: flex;
+       
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 100px;
+    background-color: var(--backgrouncolor2);
+        
+      }
+
+      .AddReview{
+        
+        width: 100%;
+        display: flex;
+        margin: 30px 0 -70px 0;
+align-items: center;
+border-bottom: 1px solid rgb(255, 123, 0);
+      }
+      .AddReview input{
+        background-color: transparent;
+        border: none;
+        
+        color: var(--backgrouncolor1);
+        font-size: 1.1em;
+        width: 100%;
+        padding: 10px 0 10px 10px;
+      }
+      .AddReview input:focus-visible{
+        outline: none;
+       
+      }
+      .AddReview ion-icon{
+        
+       font-size: 1.5em;
+        color:rgb(255, 123, 0) ;
+      }
+      

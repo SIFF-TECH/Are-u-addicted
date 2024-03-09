@@ -1,0 +1,111 @@
+.Info{
+
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.right11 {
+
+    width: 590px;
+    
+  }
+  
+  .edit-pic{
+    margin-right: 500px;
+  }
+  
+  .avatar11 {
+    margin-left: 5px;
+  }
+  
+  
+  
+  .form11 {
+    margin-left: 200px;
+    margin-top: -30%;
+    margin-bottom: 40px;
+    width: 310px;
+  }
+  
+  .label11 {
+    
+    letter-spacing: 0.75px;
+    font-size: 0.9rem;
+    color: #888cbd;
+    opacity: 0.7;
+    display: flex;
+  }
+  
+  .full_name11 {
+    padding-bottom: 5px;
+    padding-top: 16px;
+    margin-left: 0px;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #eaeaea;
+    letter-spacing: 0.29px;
+    color: #292b43;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  
+  .field11 {
+    padding-bottom: 25px;
+  }
+  
+  .field11:last-child {
+    padding-bottom: 15px;
+  }
+  
+  .bottom11 {
+    margin-left: 200px;
+    display: flex;
+  }
+  
+  .button11 {
+    width: 150px;
+    height: 45px;
+    bottom: 20px;
+    border: none;
+  }
+  
+  .button_left {
+    margin-right: 5px;
+    background-color: #6c63ff;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+  }
+  
+  .button_right {
+    margin-left: 5px;
+    background-color: #eaeaea;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    font-weight: 300;
+    color: #7376a3;
+    opacity: 0.8;
+  }
+  
+  .button11:hover {
+    cursor: pointer;
+  }
+  
+  .button11:focus {
+    outline: 0;
+  }
+  .h333-3{
+    color: #888cbd;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+  width: 85px;
+  font-size: 0.9rem;
+  
+  }

@@ -1,0 +1,169 @@
+:root{
+    --backgrouncolor1:#fdfcfc;
+    --backgrouncolor2:#252A34;
+    --text-color: rgb(46, 98, 255);
+    --side-background-color:#070f1d;
+    
+}
+#root{
+    flex-direction: column;
+}
+.feather {
+    width: 24px;
+    flex-shrink: 0;
+    fill: #ffffff;
+    stroke: #1f1d19;
+    transition: 0.5s;
+   }
+   .notification {
+    width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    margin-top: 11px;
+  }
+  
+ 
+  @media screen and (max-width: 945px) {
+    .notification + .feather {
+      display: none;
+    }
+  }
+header{
+    top: 0;
+    height: 90px;
+    width: 100%;
+    display: flex;
+   
+    padding:  0 40px 0 40px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.063);
+}
+header .Lo {
+width: 100%;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    
+    
+}
+.Link{
+    width: 30%;
+    
+}
+.List {
+
+    width: 60%;
+    display: flex;
+    
+    align-items: center;
+}
+.List a{
+    font-size: 17px;
+    color: var(--backgrouncolor2);
+    transition: 200ms;
+    padding: 20px 0 20px 0;
+   
+}
+.List a:hover{
+    transform: translateY(5px);
+    font-size: 17px;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+}
+.logo{
+    width: 100%;
+    
+}
+
+.SideBar , .SideBarContent{
+    display: none;
+}
+.imageAcc{
+   width: 50px;
+}
+.profileImage{
+border: solid;
+width: 100%;
+border-radius: 50%;
+}
+
+
+@media screen and (max-width:768px) {
+    .List {
+        display: none;
+    }
+    .Link {
+        width: 50%;
+        
+    }
+    .SideBar{
+        display: block;
+        width: 60px;
+        font-size: 40px;
+        display: flex;
+        border-radius: 50%;
+        padding: 10px 0;
+       
+        flex-direction: column;
+        place-items: center;
+        
+    }
+    ion-icon{
+        cursor: pointer;
+        color: var(--backgrouncolor2);
+    }
+    .SideBarContent{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0 20px 0;
+        backdrop-filter: blur(6px);
+        position: absolute;
+        width: 250px;
+        border-bottom: 4px solid;
+        border-right: 4px solid;
+        border-top: 1px solid;
+        z-index: 9999;
+        border-radius:0 0 12px 0 ;
+        margin-left: -300px;
+        transition: 400ms ease;
+       
+        
+    }
+    
+    .SideBarContent.active{
+        margin-left: 0;
+        
+    }
+    .SideBarContent ion-icon{
+        color: var(--backgrouncolor2);
+        font-size: 25px;
+        background: transparent;
+        transition: 100ms;
+
+    }
+   
+    .SideBarContent div{
+        cursor: pointer;
+        font-size: 20px;
+       display: flex;
+       align-items: center;
+       gap: 30px;
+       padding: 10px 20px;
+       color: var(--backgrouncolor2);
+       transition: 200ms;
+
+    }
+    .SideBarContent div:hover , .SideBarContent div:hover ion-icon{
+        backdrop-filter: brightness(20%);
+        background-color: var(--backgrouncolor2);
+
+        color: var(--backgrouncolor1);
+
+    }
+}

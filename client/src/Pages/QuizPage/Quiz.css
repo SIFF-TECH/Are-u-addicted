@@ -1,0 +1,253 @@
+:root {
+  --QuizBack: rgba(239, 239, 239, 0.473);
+}
+
+.Quiz {
+  display: flex;
+  place-items: center;
+
+  background-size: cover;
+
+  padding-bottom: 100px;
+  
+  background-size: cover;
+}
+.Quiz h1 {
+  font-size: 2.8em;
+  margin-top: 100px;
+}
+.QuizSec {
+  background-color: var(--QuizBack);
+  display: flex;
+  flex-direction: column;
+  transition: width 200ms;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  contain: paint;
+
+  min-height: 450px;
+  margin-top: 30px;
+
+  overflow: hidden;
+}
+progress {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  outline: none;
+  height: 5px;
+  border: none;
+}
+progress::-webkit-progress-value {
+  background: var(--text-color);
+  transition: 200ms;
+}
+progress::-webkit-progress-bar {
+  background-color: var(--backgrouncolor1);
+}
+#Ads {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100%;
+}
+
+#Ads div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: -20px;
+  min-height: min-content;
+  align-items: first baseline;
+}
+.order {
+  color: var(--text-color);
+}
+.Ads {
+  animation: identifier 500ms ease-in-out;
+}
+.QuizSec h2 {
+  font-size: 1.2em;
+}
+.BackAds {
+  animation: identifier2 500ms ease-in-out;
+}
+
+@keyframes identifier {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-500px);
+  }
+}
+@keyframes identifier2 {
+  from {
+    transform: translateY(500px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+li::marker {
+  color: var(--text-color);
+}
+
+.answer {
+  padding: 8px 30px 8px 10px;
+  background-color: rgba(224, 224, 224, 0.515);
+
+  transition: 100ms;
+
+  border-radius: 8px;
+  width: max-content;
+  cursor: pointer;
+}
+.answer:hover {
+  background-color: rgba(0, 123, 255, 0.218);
+  border: 2px solid rgba(0, 123, 255, 0.572);
+}
+.answer:focus {
+  background-color: rgba(0, 123, 255, 0.218);
+  border: 2px solid rgba(0, 123, 255, 0.572);
+}
+
+
+.Questions {
+  transition: 500ms;
+  flex-direction: column;
+  padding: 0 10px 0 30px;
+  justify-content: first baseline;
+
+  z-index: -99999999;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+.Questions.active {
+  display: flex;
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+
+.QuizSec .Intro {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  transition: 400ms;
+  transform: translateY(-400px);
+}
+.QuizSec .Intro.active {
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+  transform: translateY(0);
+
+  padding: 0;
+}
+.QuizSec .Start {
+  transform: translateY(400px);
+  width: 80%;
+  text-align: left;
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+  transition: 500ms;
+}
+.QuizSec .Start.active {
+  transform: translateY(0);
+  z-index: 1;
+  opacity: 1;
+  position: relative;
+}
+.QuizSec .Start.nonactive {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transform: translateY(-400px);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+button[type="Ok"] {
+  transition: 200ms;
+  color: var(--backgrouncolor1);
+  background-color: var(--text-color);
+  padding: 8px 20px 8px 20px;
+}
+button[type="Ok"]:hover {
+  opacity: 0.8;
+}
+.QuizSec div h2 {
+  color: var(--backgrouncolor2);
+}
+.QuizSec div p {
+  font-size: 1.2em;
+  color: var(--backgrouncolor2);
+  opacity: 0.8;
+}
+.QuizSec div button[type="Start"] {
+  font-size: 1.2em;
+  background-color: var(--text-color);
+  color: var(--backgrouncolor1);
+  transition: 400ms ease;
+  margin-top: 20px;
+  width: 200px;
+}
+.QuizSec div button[type="Start"]:hover {
+  color: var(--text-color);
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+}
+
+.Restart {
+  font-size: 1.2em;
+  background-color: transparent;
+  color: var(--text-color);
+  transition: 400ms ease;
+  width: 200px;
+  border: 1px solid var(--text-color);
+}
+
+.Restart:hover {
+  border: none;
+  background-color: var(--text-color);
+  color: var(--backgrouncolor1);
+}
+
+.Qiest p {
+  color: black;
+  position: absolute;
+  font-size: 60px;
+}
+
+button[type="Submit"] {
+  background-color: var(--text-color);
+  color: var(--backgrouncolor1);
+  width: max-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+button[type="Submit"] span {
+  opacity: 1;
+  position: relative;
+  font-size: 1.3em;
+}

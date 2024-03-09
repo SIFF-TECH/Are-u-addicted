@@ -1,0 +1,144 @@
+
+.InfoP{
+  
+   
+}
+
+.all-info{
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 0;
+}
+
+
+.web-doctors,.web-patient,.current-patient , .web-visited,.web-payroll{
+    background-color: var(--text-color-back);
+  border: none;
+   width: 25%;z-index: -1;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.web-patient{
+    background-color: #fd89041a;
+    
+}
+.current-patient{
+    background-color: #fa3c4c1c;
+    z-index: 0;
+}
+.total-patient{
+    background-color: rgba(235, 199, 255, 0.491);
+    z-index: 0;
+}
+.web-payroll{
+   background-color: #44bec72b;
+   z-index: 0;
+}
+
+
+.web-visited{
+    background-color: #a16bfe2e;
+    z-index: 0;
+}
+.web-doctors h3 {
+    color: var(--text-color);
+    margin-top: 0;
+}
+
+.web-doctors p {
+    color: var(--text-color);
+    margin-top: -8px;
+    
+}
+.web-patient h3{
+    color:#fd8904;
+    margin-top: 0;
+}
+.web-patient p{
+    color:#fd8904 ;
+    margin-top: -8px;
+}
+.current-patient h3{
+    color:#fa3c4c ;
+    margin-top: 0;
+}
+
+.current-patient p{
+    color: #fa3c4c;
+    margin-top: -8px;
+}
+
+
+.web-visited h3 {
+    color: #a16bfe;
+  margin-top: 0;
+}
+.web-visited p{
+    color: #a16bfe;
+    margin-top: -8px;
+}
+.web-payroll h3{
+    color: #44bec7 ;
+    margin-top: 0;
+}
+.web-payroll p{
+    color: #44bec7;
+    margin-top: -8px;
+}
+
+
+
+
+.web-statics{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.static-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.static-header h4{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.static-header h4 span{
+    color: #44c75a;
+    font-weight: 400;
+   
+}
+
+
+.green{
+   
+    background-color: #5aff9f1F;
+    color: #54d78b;
+    padding: 10px;
+    border-radius: 12px;
+}
+.red{
+    
+    background-color: #fa3c4c2e;
+    color: #fa3c4c;
+    padding: 10px;
+    border-radius: 12px;
+}
+.yellow{
+    
+    background-color: #ffd94f2e;
+    color: #f5c000;
+    width: max-content;
+    padding: 10px;
+    border-radius: 12px;
+}
+.blue{
+    background-color:var(--text-color-back);
+    color: var(--text-color);
+   
+    padding: 10px;
+    border-radius: 12px;
+}
