@@ -35,11 +35,13 @@ header{
     height: 90px;
     width: 100%;
     display: flex;
-   
+   position: sticky;
     padding:  0 40px 0 40px;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.063);
+    background-color: white;
+    z-index: 99;
 }
 header .Lo {
 width: 100%;
